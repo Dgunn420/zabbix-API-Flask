@@ -15,7 +15,7 @@ def index():
 
 from Mysql.RealtimeData import monitor_data,monitor_item
 from Mysql.ipGroup import all_ip
-@app.route("/one", methods=["GTE","POST"])
+@app.route("/one", methods=["GET","POST"])
 def one():
     if request.method == "POST":
         data = request.get_data()
